@@ -1,0 +1,51 @@
+:root{
+    --bgcolor: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+    
+}
+
+.headerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: var(--bgcolor);
+    padding: 1rem 2rem;
+
+}
+
+.logohbo{
+    height: 1rem;
+}
+
+.burgermenu{
+    height: 1.5rem;
+}
+
+.itensmenu{
+    display: none;
+}
+
+.iconsright{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: min-content;
+}
+
+.iconsright img{
+    height: 1.5rem;
+}
+
