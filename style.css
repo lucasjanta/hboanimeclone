@@ -40,7 +40,7 @@ body{
     position: absolute;
     background-color: var(--bgcolor);
     top: 0;
-    left: 0;
+    left: -14rem;
     padding: 1.7rem;
     padding-right: 5rem;
     list-style: none;
