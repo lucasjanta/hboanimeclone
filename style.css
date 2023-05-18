@@ -11,7 +11,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(117,11,131,1) 100%);
+    color: white;
     
 }
 
@@ -82,3 +83,49 @@ body{
 .contentslider1 img{
     scroll-snap-align: start;
 }
+
+.textmainslider{
+    display: flex;
+    position: absolute;
+    top: 34.9rem;
+    flex-direction: column;
+    color: white;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.textmainslider h3{
+    font-size: 1rem;
+}
+
+.textmainslider p{
+    font-size: 1.2rem;
+}
+
+.goleft{
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: 37.5rem;
+    align-items: center;
+    width: 3rem;
+    justify-content: center;
+}
+
+.goright{
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 37.5rem;
+    align-items: center;
+    width: 3rem;
+    justify-content: center;
+}
+
+.goleft img, .goright img{
+    height: 1.5rem;
+}
+
