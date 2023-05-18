@@ -72,3 +72,13 @@ body{
     height: 1.5rem;
 }
 
+.contentslider1{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.contentslider1 img{
+    scroll-snap-align: start;
+}
