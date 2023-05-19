@@ -129,3 +129,16 @@ body{
     height: 1.5rem;
 }
 
+.controlslider{
+    display: flex;
+    gap: 1rem;
+    width: min-content;
+    margin: 1rem auto;
+}
+
+.controlop{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #808080;
+    border-radius: 50px;
+}
