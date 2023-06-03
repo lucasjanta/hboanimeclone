@@ -82,12 +82,13 @@ body{
 
 .contentslider1 img{
     scroll-snap-align: start;
+    width: 100%;
 }
 
 .textmainslider{
     display: flex;
     position: absolute;
-    top: 34.9rem;
+    top: 28rem;
     flex-direction: column;
     color: white;
     width: 100vw;
