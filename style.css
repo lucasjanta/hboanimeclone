@@ -10,19 +10,20 @@
 
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(117,11,131,1) 100%);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(0, 0, 0) 100%);
     color: white;
     
 }
 
 .headerdiv{
     display: flex;
+    position:fixed;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: var(--bgcolor);
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0));
     padding: 1rem 2rem;
 
 }
@@ -88,7 +89,7 @@ body{
 .textmainslider{
     display: flex;
     position: absolute;
-    top: 28rem;
+    top: 25rem;
     flex-direction: column;
     color: white;
     width: 100vw;
@@ -103,7 +104,7 @@ body{
 }
 
 .textmainslider p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .goleft{
@@ -142,4 +143,32 @@ body{
     height: 0.5rem;
     background-color: #808080;
     border-radius: 50px;
+}
+
+.slider2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.textslider h1{
+    font-size: 0.92rem;
+}
+
+.textslider p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contentslider2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.contentslider2 img{
+    width: 40%;
+    margin: 1rem 1rem 0 0;    
 }
