@@ -25,8 +25,10 @@ function animesmainslider() {
                 <p>Ação, aventura e muita diversão com os animes do nosso catalogo.</p>`;
                 itemdiv.appendChild(texts);
             }
+
             let arraydetextos1 = document.querySelectorAll(".textmainslider");
             let posicionatexto = 0
+
             for (let i = 0; i < data.data.length; i++) {
                 arraydetextos1[i].style.left = posicionatexto + "%";
                 posicionatexto += 100;
@@ -47,6 +49,9 @@ function recomendationslider() {
             }
         })
         }
+
+        
+
 
 animesmainslider();
 recomendationslider();
