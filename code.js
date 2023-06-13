@@ -22,7 +22,7 @@ function animesmainslider() {
                 const texts = document.createElement('div');
                 texts.className = "textmainslider";
                 texts.innerHTML = `<h3>Os animes que você ama e outros para descobrir</h3>
-                <p>Ação, aventura e muita diversão com os animes do nosso catalogo.</p>`;
+                <p>Ação, aventura e muita diversão com os animes do nosso catálogo.</p>`;
                 itemdiv.appendChild(texts);
             }
 
