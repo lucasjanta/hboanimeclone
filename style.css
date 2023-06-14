@@ -180,5 +180,40 @@ body{
 
 .contentslider2 img{
     width: 40%;
-    margin: 1rem 1rem 0 0;    
+    margin: 1rem 1rem 2rem 0;    
+}
+
+.featuredcall img{
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.textfeatured{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.textfeatured h2{
+    font-size: 1rem;
+}
+
+.textfeatured p{
+    font-size: 0.7rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.featuredcall button{
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    text-align: center;
+    background-image: linear-gradient(1.5708rad, rgb(117, 62, 239) 25%, rgb(185, 8, 246) 100%);
+    border-radius: 5px;
+}
+
+.featuredcall button img{
+    width: 2rem;
 }

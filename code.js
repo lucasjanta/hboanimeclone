@@ -4,6 +4,7 @@ const contentslider = document.querySelector(".contentslider2");
 
 const api_url = "https://api.jikan.moe/v4/top/anime?limit=5";
 const recomendations = "https://api.jikan.moe/v4/recommendations/anime?limit=10";
+const hxhanime = "https://api.jikan.moe/v4/anime/11061";
 
 function animesmainslider() {
     fetch(api_url)
