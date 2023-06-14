@@ -1,5 +1,8 @@
 const mainslider = document.querySelector(".contentslider1");
 const contentslider = document.querySelector(".contentslider2");
+const menu = document.querySelector(".burgermenu");
+let itensmenu = document.querySelector(".itensmenu");
+let exitmenu = document.querySelector(".exitmenu");
 
 
 const api_url = "https://api.jikan.moe/v4/top/anime?limit=5";
@@ -57,3 +60,10 @@ function recomendationslider() {
 animesmainslider();
 recomendationslider();
 
+
+menu.addEventListener("click", () => {
+    itensmenu.classList.add("togglemenu");
+})
+exitmenu.addEventListener("click", () => {
+    itensmenu.classList.remove("togglemenu");
+})
