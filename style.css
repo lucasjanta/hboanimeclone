@@ -252,3 +252,39 @@ body{
         opacity: 100;
     }
 }
+
+.slider3{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider3 h3{
+    font-size: 0.92rem;
+}
+
+.contentslider3 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.items3{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+}
+
+.items3 a{
+    width: auto;
+    height:fit-content;
+}
+
+.items3 img{
+    width: 10rem;
+}
