@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const mainslider = document.querySelector(".contentslider1");
 const contentslider = document.querySelector(".contentslider2");
 const contentsliderseason = document.querySelector(".contentslider4");
+const upcomingSlider = document.querySelector(".contentslider3");
 const menufundo = document.querySelector(".menublack");
 const menu = document.querySelector(".burgermenu");
 let itensmenu = document.querySelector(".itensmenu");
@@ -11,6 +12,7 @@ let exitmenu = document.querySelector(".exitmenu");
 const api_url = "https://api.jikan.moe/v4/top/anime?limit=5";
 const recomendations = "https://api.jikan.moe/v4/recommendations/anime?limit=10";
 const season = "https://api.jikan.moe/v4/seasons/now?limit=10";
+const upcoming = "https://api.jikan.moe/v4/seasons/upcoming?limit=5";
 const hxhanime = "https://api.jikan.moe/v4/anime/11061";
 
 function animesmainslider() {
@@ -49,7 +51,7 @@ function recomendationslider() {
     fetch(recomendations)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data.data[0].entry[0].images.jpg.image_url);
+            /* console.log(data.data[0].entry[0].images.jpg.image_url); */
             for (let i = 0; i < 10; i++) {
                 const recomendationimgs = document.createElement('img');
                 recomendationimgs.setAttribute("src", data.data[i].entry[0].images.jpg.image_url);
@@ -62,11 +64,31 @@ function seasonslider() {
     fetch(season)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data.data[0].images.jpg.image_url);
+            /* console.log(data.data[0].images.jpg.image_url); */
             for (let i = 0; i < 10; i++) {
                 const seasonimgs = document.createElement('img');
                 seasonimgs.setAttribute("src", data.data[i].images.jpg.image_url);
                 contentsliderseason.appendChild(seasonimgs);
+            }
+        })
+        }
+
+function upcomingAnimes() {
+    fetch(upcoming)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data.data[0].images.jpg.image_url);
+            for (let i = 0; i < 5; i++) {
+                const upcomingItem = document.createElement('div');
+                upcomingItem.classList.add("items3");
+                upcomingSlider.appendChild(upcomingItem);
+                const upcomingImgs = document.createElement('img');
+                upcomingImgs.setAttribute("src", data.data[i].images.jpg.image_url);
+                const upcomingItemTitle = document.createElement('p');
+                upcomingItemTitle.innerHTML = data.data[i].title;
+                upcomingItem.appendChild(upcomingImgs);
+                upcomingItem.appendChild(upcomingItemTitle);
+                
             }
         })
         }
@@ -76,7 +98,7 @@ function seasonslider() {
 animesmainslider();
 recomendationslider();
 seasonslider();
-
+upcomingAnimes();
 
 menu.addEventListener("click", () => {
     itensmenu.classList.add("togglemenu");
